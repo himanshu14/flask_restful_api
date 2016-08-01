@@ -190,4 +190,4 @@ def userSms():
 
 #curl -i -H "Content-Type: application/json" -X POST -d '{"inputEmail":"nikhil@b.com","inputPassword":"kg"}' http://52.40.54.6/V1/newLogin
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
