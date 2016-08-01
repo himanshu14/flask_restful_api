@@ -12,9 +12,9 @@ app.secret_key = 'absurd mango and annoying orange'
 mysql = MySQL(app) 
 # MySQL configurations
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'bul_42_cr8'
-app.config['MYSQL_DB'] = 'check_api'
-app.config['MYSQL_HOST'] = 'ppuserphone-meta-copy.cthkpx3mbvub.ap-southeast-1.rds.amazonaws.com'
+app.config['MYSQL_PASSWORD'] = 'password'
+app.config['MYSQL_DB'] = 'database'
+app.config['MYSQL_HOST'] = 'hostname'
 #mysql.init_app(app)
 
 
@@ -179,15 +179,5 @@ def userSms():
 
 
 
-#curl -i -H "Content-Type: application/json" -X POST -d '{"id":"1","inputFname":"abc","inputLname":"def","inputMnumber":"9451275628","inputEmail":"abc@b.com","inputAge":"20","inputGender":"Male","inputCity":"Delhi","maritalStatus":"Unmarried","employmentStatus":"Employed","homeOwnership":"Rented","monthlySalary":"40000","monthlyExpend":"30000","PAN":"ABC90DEF20"}' http://localhost:5000/V1/loanDetails
-#curl -i -H "Content-Type: application/json" -X POST -d '{"inputEmail":"nikhil@b.com"}' http://localhost:5000/V1/newLoginfb
-#curl -i -H "Content-Type: application/json" -X POST -d '{"inputEmail":"nikhil@b.com","inputPassword":"kg"}' http://localhost:5000/V1/newLogin
-#curl -i -H "Content-Type: application/json" -X POST -d '{"inputFname":"nikhil","inputLname":"bhaskar","inputEmail":"nikhil@b.com","inputMnumber":"9414156957"}' http://localhost:5000/V1/newLoginfb
-#curl -i -H "Content-Type: application/json" -X GET -d '{"inputName":"nikhil","inputEmail":"nikhil@b.com","inputPassword":"kg1"}' http://localhost:5000/V1/validateLogin
-#curl -i -H "Content-Type: application/json" -X POST -d '{"imei": "359300050582339", "mac_address": "34:bb:26:1b:2c:82", "created_on_timestamp": "1442555614120", "details":[{"packageName":"com.google.android.youtube","versionCode":"123"}, {"packageName":"com.android.packageinstaller","versionCode":"1234"}]}' http://localhost:5000/V1/newApps
-#curl -i -H "Content-Type: application/json" -X POST -d '{"imei": "359300050582339", "mac_address": "34:bb:26:1b:2c:82", "created_on_timestamp": "1442555614120",  "details":[{"body":"msg1","message_timestamp" :"1452555611100","sender_id":"AD-flpkrt"}, {"body":"msg2","message_timestamp" :"1252596311100","sender_id":"VM-amazon"}]}' http://localhost:5000/V1/newSms
-
-
-#curl -i -H "Content-Type: application/json" -X POST -d '{"inputEmail":"nikhil@b.com","inputPassword":"kg"}' http://52.40.54.6/V1/newLogin
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
