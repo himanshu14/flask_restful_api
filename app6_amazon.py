@@ -1,4 +1,4 @@
-#!flask/bin/python
+#!usr/bin/python
 from flask import Flask, jsonify
 from werkzeug import generate_password_hash, check_password_hash
 from flask import Flask, render_template, json, request
